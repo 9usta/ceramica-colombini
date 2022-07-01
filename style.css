@@ -1,0 +1,295 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+	font-family: 'Teko', sans-serif;
+	/*min-height: 100vh; 
+	tube que usar un calc en el main y restarle los pixeles del header y el
+	footer, porque si el main era mas chico al centrarlo me corria el titulo
+
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	align-content: space-between;
+	habia hecho un grid, pero es inecesario ya son elementos en linea yque el 
+	header y el footer tienen medidas abs y el main se auto ajusta */
+}
+
+html{
+	font-size: 10px;
+	color: #FAFAFA;
+	background-color: #181818;
+}
+
+a{
+	text-decoration: none;
+	color: #FAFAFA;
+}
+
+li {
+	list-style-type: none;
+	font-size: 2rem;
+	margin: 10px;
+}
+
+button{
+	font-family: 'Mako', sans-serif;
+	font-weight: 400;
+
+}
+
+label{
+	font-family: 'Mako', sans-serif;
+	font-weight: 400;
+	font-size:1.5rem;
+}
+
+span{
+	font-size:3rem;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header{
+	background-color: #181818;
+	padding: 20px;
+}
+
+.header__content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content__logo{
+	width: 80px;
+}
+
+.content__nav{
+	display: flex;
+}
+
+
+main{
+	padding: 0 20px;
+	margin: 10px 0px 30px;
+	min-height:calc(100vh - 207.28px);
+}
+
+.portada{
+display: flex;
+justify-content:space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+.portada h1{
+	width: 300px;
+	line-height: 60px;
+	font-weight: 600;
+	font-size: 8rem;
+
+}
+
+.portada h2 {
+	font-weight: 600;
+	font-size: 4rem;
+	width: 300px;
+	text-align:right;
+}
+
+
+.portada__img{
+max-width: 450px;
+min-width: 290px;
+width: 50%;
+}
+.portada img{
+	width: 100%;
+}
+
+img{
+	border-radius: 10px;
+}
+
+h2{
+	font-weight: 600;
+	font-size: 4rem;
+}
+
+p{
+	font-family: 'Mako', sans-serif;
+	font-weight: 400;
+	font-size:2rem;
+}
+
+.footer{
+	background-color: #181818;
+	padding: 0 20px 10px;
+}
+
+.footer__content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content__insta{
+	width: 30px;
+}
+
+.content__news{
+	display: flex;
+	align-items: center;
+}
+
+
+.content__news input{
+	width: 150px;
+	margin: 10px;
+}
+
+
+.sobre-mi p{
+	z-index: 1;
+}
+
+.sobre-mi img{
+	width: 300px;
+	float: right;
+}
+
+
+.proceso{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+
+.proceso p{
+	width: 60%;
+	min-width: 280px;
+}
+
+.proceso img{
+	width: 200px;
+	margin: 5px;
+}
+
+
+.galeria{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.galeria img{
+	width: 32%;
+	min-width: 280px;
+	margin: 0 0 10px ;
+}
+
+.contacto{
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	}
+
+.contacto__form{
+	display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    flex-direction: column;
+	/* tambien podria haber aplicado un grid area en lugar de dos flex */
+}
+
+.contacto__datos{
+	width: 300px;
+	margin: 10px 0;
+}
+.contacto textarea{
+	width: 300px;
+	height: 200px;
+	margin: 10px 0 20px;
+}
+
+.contacto button{
+	margin: 20px 0 0;
+}
+
+.contacto p{
+	width: 280px;
+	margin: 10px 0 0;
+	text-align: center;
+}	
+
+.contacto img{
+	width: 280px;
+}
+
+.contacto__contenedor{
+	background-color: #fff;
+	width: 280px;
+	border-radius: 10px;
+}
+
+
+@media (min-width: 425px) {
+	span{
+	  display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.contacto__contenedor{
+		display: none;
+	}
+	.contacto__tex{
+		display: none;
+	}
+	.contacto{
+		justify-content: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.sobre-mi img{
+		width: 280px;
+		float:none;
+	}
+	.content__news{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+		.content__news input{
+			width: 100px;
+	}
+		.content__news button{
+			width: 70px;
+}
+}
+
+@media (max-width: 424px) {
+	.content__nav{
+	  display: none;
+	}
+}
+
+@media (max-width: 345px) {
+	.contacto__datos{
+		width: 280px;
+	}
+	.contacto textarea{
+		width: 280px;
+	}
+}
