@@ -71,8 +71,12 @@ span{
 
 .content__nav{
 	display: flex;
+	transition: transform 0.3s;
 }
 
+.content__nav li:hover {
+	transform: translateY(-5px);
+}
 
 main{
 	padding: 0 20px;
