@@ -200,6 +200,11 @@ p{
 	width: 32%;
 	min-width: 280px;
 	margin: 0 0 10px ;
+	transition: 1s;
+}
+
+.galeria img:hover{
+	transform: scale(1.4);
 }
 
 .contacto{
