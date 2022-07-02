@@ -6,71 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gustavo Colombini</title>
     <link rel="shortcut icon" href="./images/log.ico" />
-  
+  <!--
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mako&family=Teko:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./estilos/bootstrap-grid.min.css" />
-    <script src="./estilos/bootstrap.bundle.min.js"></script>
-    
+   --> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
   </head>
 
-  <body>
-    <header class="header">
-      <div class="header__content container">
-        <a href="./index.html">
-          <img class="content__logo" src="./images/g-logo.png" alt="gustavo-logo" />
-        </a>
-        <nav>
-          <ul class="content__nav">
-            <li>
-              <a href="./index.html">Home</a>
-            </li>
-            <li>
-              <a href="./pages/about.html">About</a>
-            </li>
-            <li>
-                <a href="./pages/process.html">Process</a></li>
-            <li>
-              <a href="./pages/galery.html">Galery</a>
-            </li>
-            <li>
-              <a href="./pages/contact.html">Contact</a>
-            </li> 
-          </ul>
-          <span>☰</span>
-        </nav>
-      </div>
+  <body class="p-3 mb-2 bg-dark text-white">
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/g-logo.png" alt="gustavo-logo" width="80">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/process.html">Process</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/galery.html">Galery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <section class="portada container">
-        <div>
-          <h1>Gustavo Colombini</h1>
-          <h2>Cerámica</h2>
-        </div>
-        <div class="portada__img">
-          <img  src="./images/tetera.jpg" alt="tetera" />
-          <!-- quiero hacer un carrusel o algo similar con mas imagenes
-          <img src="./images/bonsai-rectangular.jpg" alt="maceta-rectangular" width="500" />
-          <img src="./images/bonsai-hexagoal.jpg" alt="maceta-hexagoal" width="500" />-->
+      <section class="p-3 container">
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-8 col-md-4">
+            <h1 class="text-center">Gustavo Colombini</h1>
+            <h2 class="display-6 text-end">Cerámica</h2>
+          </div>
+          <div class="col-8 col-md-4 text-center">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/tetera.jpg"  class="rounded d-block w-100" alt="tetera">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/bonsai-rectangular.jpg" class="rounded d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/bonsai-hexagoal.jpg" class="rounded d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__content container">
-        <div class="content__news">      
-          <label for="correo">Inscribite al Newsletter </label>
+
+    <footer >
+      <div class="p-3 d-flex justify-content-between align-items-center">
+        <div>
           <div>
-          <input type="email" id="correo" name="correo" placeholder="Email" />
-          <button type="sing-up">Suscribirse</button>
+            <label for="correo">Inscribite al Newsletter </label>
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          </div>      
+            <button class="btn btn-outline-light btn-sm" type="sing-up">Suscribirse</button>
           </div>
-        </div>
         <div>
           <a href="https://www.instagram.com/gustavocolombini.ceramica/" target="_blank">
-            <img class="content__insta" src="./images/instagram.png" alt="www.instagram.com/gustavocolombini.ceramica" />
+            <img src="./images/instagram.png" alt="www.instagram.com/gustavocolombini.ceramica" width="30px" />
           </a>
         </div>
       </div>
