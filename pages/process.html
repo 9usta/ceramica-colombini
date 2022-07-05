@@ -6,88 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gustavo Colombini</title>
     <link rel="shortcut icon" href="../images/log.ico" />
-      
+  <!--
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mako&family=Teko:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="../style.css" />
-  </head>
+   --> 
 
-  <body>
-    <header class="header">
-      <div class="header__content container">
-        <a href="../index.html">
-          <img class="content__logo" src="../images/g-logo.png" alt="gustavo-logo" />
-        </a>
-        <nav>
-          <ul class="content__nav">
-            <li>
-              <a href="../index.html">Home</a>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+ </head>
+
+ <body class="p-3 mb-2 bg-dark text-white">
+   <header class="container">
+     <nav class="navbar navbar-expand-sm navbar-dark">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="../index.html">
+           <img src="../images/g-logo.png" alt="gustavo-logo" width="80">
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ">
+             <li class="nav-item">
+               <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
             </li>
-            <li>
-              <a href="./about.html">About</a>
-            </li>
-            <li>
-                <a href="./process.html">Process</a></li>
-            <li>
-              <a href="./galery.html">Galery</a>
-            </li>
-            <li>
-              <a href="./contact.html">Contact</a>
-            </li> 
-          </ul>
-          <span>☰</span>
-        </nav>
-      </div>
-    </header>
+             <li class="nav-item">
+               <a class="nav-link active" href="./process.html">Process</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./galery.html">Galery</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./contact.html">Contact</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+   </header>
 
     <main>
       <section class="container">
         <h2>Proceso</h2>
-        <div class="proceso">
-          <p>Nuestras piezas son 100% artesanales.
-            Comenzamos preparando la pasta cerámica a partir de sus componentes en polvo.
-          </p>
-          <img src="../images/preparado-pasta.jpg" alt="preparado-pasta"/>
 
-          <p>Una ves que este bien hidratada, se pasa a amasar la pasta, para asegurarse que esta esté homogéneamente mezclada y quitar las posibles burbujas de aire que puedan haber quedado en su interior.</p>
-          <img src="../images/amasado-pasta.jpg" alt="amasado-pasta" />
+            <div class="row justify-content-evenly align-items-center">
+              <div class="p-2 col-12 col-md-6">
+                <p>Nuestras piezas son 100% artesanales.
+                  Comenzamos preparando la pasta cerámica a partir de sus componentes en polvo.
+                </p>              
+              </div>
+              <div class="p-2 col-12 col-md-3">
+                <img  class="img-fluid rounded" src="../images/preparado-pasta.jpg" alt="preparado-pasta" />
+              </div>
 
-          <p>En este punto, se puede modelar la maceta mediante el torno alfarero o, en este caso, estirando placas de espesor uniforme y recortando todas las partes que compondrán la maceta.</p>
-          <img src="../images/estirado.jpg" alt="estirado-pasta" />
+              <div class="p-2 col-12 col-md-6">
+                <p>Una ves que este bien hidratada, se pasa a amasar la pasta, para asegurarse que esta esté homogéneamente mezclada y quitar las posibles burbujas de aire que puedan haber quedado en su interior.</p>
+              
+              </div>
+              <div class="p-2 col-12 col-md-3">
+                <img  class="img-fluid rounded" src="../images/amasado-pasta.jpg" alt="amasado-pasta" />
+              </div>
 
-          <p>Se unen todas las partes con barbotina (pasta mas liquida) y se refuerzan las uniones con más pasta cerámica.</p>
-          <img src="../images/armado.jpg" alt="armado"  />
+              <div class="p-2 col-12 col-md-6">
+                <p>En este punto, se puede modelar la maceta mediante el torno alfarero o, en este caso, estirando placas de espesor uniforme y recortando todas las partes que compondrán la maceta.</p>           
+              </div>
+              <div class="p-2 col-12 col-md-3">
+                <img  class="img-fluid rounded" src="../images/estirado.jpg" alt="estirado-pasta" />
+              </div>
 
-          <p>Una vez que la maceta esta armada, tiene que pasar por un periodo de secado lento, si se deja a la intemperie, el rápido secado puede generar tenciones y rajaduras en la maceta, ya que al ir secándose se contrae.</p>
-          <img src="../images/secado.jpg" alt="bizcochado" />
+              <div class="p-2 col-12 col-md-6">
+                <p>Se unen todas las partes con barbotina (pasta mas liquida) y se refuerzan las uniones con más pasta cerámica.</p>             
+              </div>
+              <div class="p-2 col-12 col-md-3">
+                <img  class="img-fluid rounded" src="../images/armado.jpg" alt="armado" />
+              </div>
+              
+              <div class="p-2 col-12 col-md-6">
+                <p>Una vez que la maceta esta armada, tiene que pasar por un periodo de secado lento, si se deja a la intemperie, el rápido secado puede generar tenciones y rajaduras en la maceta, ya que al ir secándose se contrae.</p>
+              </div>
+              <div class="p-2 col-12 col-md-3">
+                <img  class="img-fluid rounded" src="../images/secado.jpg" alt="bizcochado" />
+              </div>
 
-          <p>Una vez que las piezas están secas, se realiza un primer horneado a unos 900°C llamado bizcochado.</p>
-          <img src="../images/bizcochado.jpg" alt="bizcochado"  />
+              <div class="p-2 col-12 col-md-6">
+                <p>Una vez que las piezas están secas, se realiza un primer horneado a unos 900°C llamado bizcochado.</p>
+              </div>
+              <div class="p-2 col-12 col-md-3">
+                <img  class="img-fluid rounded" src="../images/bizcochado.jpg" alt="bizcochado"  />
+              </div>
 
-          <p>Las piezas bizcochadas que tienen una mayor dureza que nos permite manipularlas de mejor manera, en este momento se pueden corregir pequeñas imperfecciones mediante lijado y además es el momento idóneo para aplicar el esmalte, los cuales también preparamos nosotros. Las macetas vuelven a horno, esta vez llegan a una temperatura de 1180°C donde la maceta y el esmalte alcanzaran su estado final.</p>
-          <img src="../images/horneado.jpg" alt="horneado" />
-
-        </div>
-        
-      </section>
+              <div class="p-2 col-12 col-md-6">
+                <p>Las piezas bizcochadas que tienen una mayor dureza que nos permite manipularlas de mejor manera, en este momento se pueden corregir pequeñas imperfecciones mediante lijado y además es el momento idóneo para aplicar el esmalte, los cuales también preparamos nosotros. Las macetas vuelven a horno, esta vez llegan a una temperatura de 1180°C donde la maceta y el esmalte alcanzaran su estado final.</p>
+              </div>
+              <div class="p-2 col-12 col-md-3">
+                <img  class="img-fluid rounded" src="../images/horneado.jpg" alt="horneado" />
+              </div>
+            </div>
+        </section>
     </main>
     
-    <footer class="footer">
-      <div class="footer__content container">
-        <div class="content__news">      
-          <label for="correo">Inscribite al Newsletter </label>
+    <footer class="container">
+      <div class="p-3 d-flex justify-content-between align-items-center">
           <div>
-            <input type="email" id="correo" name="correo" placeholder="Email" />
-            <button type="sing-up">Suscribirse</button>
+            <label for="correo">Inscribite al Newsletter </label>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <input id="newsletter1" type="text" class="form-control" placeholder="name@example.com">
+              <button class="btn btn-outline-light" type="button">Subscribe</button>
+            </div>
+          </div>      
+          <div>
+            <a href="https://www.instagram.com/gustavocolombini.ceramica/" target="_blank">
+              <img src="../images/instagram.png" alt="www.instagram.com/gustavocolombini.ceramica" width="30px" />
+            </a>
           </div>
-        </div>
-        <div>
-          <a href="https://www.instagram.com/gustavocolombini.ceramica/" target="_blank">
-            <img class="content__insta" src="../images/instagram.png" alt="www.instagram.com/gustavocolombini.ceramica" />
-          </a>
-        </div>
       </div>
     </footer>
   </body>

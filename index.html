@@ -18,7 +18,7 @@
   </head>
 
   <body class="p-3 mb-2 bg-dark text-white">
-    <header>
+    <header class="container">
       <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
@@ -31,6 +31,9 @@
             <ul class="navbar-nav ">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/process.html">Process</a>
@@ -74,20 +77,20 @@
     </main>
 
 
-    <footer >
+    <footer class="container">
       <div class="p-3 d-flex justify-content-between align-items-center">
-        <div>
           <div>
             <label for="correo">Inscribite al Newsletter </label>
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <input id="newsletter1" type="text" class="form-control" placeholder="name@example.com">
+              <button class="btn btn-outline-light" type="button">Subscribe</button>
+            </div>
           </div>      
-            <button class="btn btn-outline-light btn-sm" type="sing-up">Suscribirse</button>
+          <div>
+            <a href="https://www.instagram.com/gustavocolombini.ceramica/" target="_blank">
+              <img src="./images/instagram.png" alt="www.instagram.com/gustavocolombini.ceramica" width="30px" />
+            </a>
           </div>
-        <div>
-          <a href="https://www.instagram.com/gustavocolombini.ceramica/" target="_blank">
-            <img src="./images/instagram.png" alt="www.instagram.com/gustavocolombini.ceramica" width="30px" />
-          </a>
-        </div>
       </div>
     </footer>
   </body>
