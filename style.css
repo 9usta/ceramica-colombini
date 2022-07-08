@@ -1,0 +1,77 @@
+body{
+	font-family: 'Teko', sans-serif;
+}
+html{
+	font-size: 10px;
+}
+
+li {
+	font-size: 2rem;
+	transition: transform 0.3s;
+}
+li:hover {
+	transform: translateY(-3px);
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+main{
+	padding: 0 20px;
+	margin: 10px 0px 30px;
+	min-height:calc(100vh - 233.44px);
+}
+
+.titulo h1{
+	width: 300px;
+	line-height: 60px;
+	font-weight: 600;
+	font-size: 8rem;
+
+}
+
+.titulo h2 {
+	font-weight: 600;
+	font-size: 4rem;
+	width: 300px;
+	text-align:right;
+}
+
+h2{
+	font-weight: 600;
+	font-size: 4rem;
+}
+
+p{
+	font-family: 'Mako', sans-serif;
+	font-weight: 400;
+	font-size:2rem;
+}
+
+.contacto {
+	font-family: 'Mako', sans-serif;
+	font-weight: 400;
+	font-size:2rem;
+}
+
+.foot {
+	font-family: 'Mako', sans-serif;
+	font-weight: 400;
+	font-size:1.5rem;
+}
+
+.lupa {
+	transition: transform 0.3s;
+}
+.lupa:hover {
+	transform: scale(1.2)
+}
+
+.zoom {
+	transition: transform 0.3s;
+}
+.zoom:active {
+	transform: scale(1.6)
+}
