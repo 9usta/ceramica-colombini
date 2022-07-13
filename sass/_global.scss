@@ -1,0 +1,40 @@
+body{
+	font-family: 'Teko', sans-serif;
+}
+html{
+	font-size: 10px;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+main{
+	padding: 0 20px;
+	margin: 10px 0px 30px;
+	min-height:calc(100vh - 233.44px);
+}
+
+h2{
+	font-weight: 600;
+	font-size: 4rem;
+}
+
+p{
+	font-family: 'Mako', sans-serif;
+	font-weight: 400;
+	font-size:2rem;
+}
+
+.lupa {
+	transition: $time;
+    &:hover {
+	transform: scale(1.2)
+}}
+
+.zoom {
+	transition: $time;
+    &:active {
+	transform: scale(1.6)
+}}

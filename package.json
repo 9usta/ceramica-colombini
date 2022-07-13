@@ -1,0 +1,22 @@
+{
+  "name": "caramica-colombini",
+  "version": "1.0.0",
+  "description": "ceramica",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./style.css -w"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9usta/ceramica-colombini.git"
+  },
+  "author": "gustavo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/9usta/ceramica-colombini/issues"
+  },
+  "homepage": "https://github.com/9usta/ceramica-colombini#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
