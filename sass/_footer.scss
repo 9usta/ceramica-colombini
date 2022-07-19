@@ -1,5 +1,4 @@
 .foot {
 	font-family: 'Mako', sans-serif;
-	font-weight: 400;
-	font-size:1.5rem;
+	@include letra(1.5rem);
 }

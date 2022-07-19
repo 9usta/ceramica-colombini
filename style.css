@@ -15,11 +15,13 @@ main {
 
 h2 {
   font-weight: 600;
+  color: aqua;
   font-size: 4rem; }
 
 p {
   font-family: 'Mako', sans-serif;
   font-weight: 400;
+  color: aqua;
   font-size: 2rem; }
 
 .lupa {
@@ -33,31 +35,32 @@ p {
     transform: scale(1.6); }
 
 li {
+  color: aqua;
   font-size: 2rem;
   transition: transform 0.3s; }
   li:hover {
     transform: translateY(-3px); }
 
-.titulo h1 {
-  width: 300px;
-  line-height: 60px;
+.f_titulo, .titulo h1, .titulo h2 {
   font-weight: 600;
+  width: 300px; }
+
+.titulo h1 {
+  line-height: 60px;
+  color: aqua;
   font-size: 8rem; }
 
 .titulo h2 {
-  font-weight: 600;
+  color: aqua;
   font-size: 4rem;
-  width: 300px;
   text-align: right; }
 
 .contacto {
   font-family: 'Mako', sans-serif;
-  font-weight: 400;
-  font-size: 2rem; }
+  color: aqua;
+  font-size: 1.5rem; }
 
 .foot {
   font-family: 'Mako', sans-serif;
-  font-weight: 400;
+  color: aqua;
   font-size: 1.5rem; }
-
-/* sdasdad */

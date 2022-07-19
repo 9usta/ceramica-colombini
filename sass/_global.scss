@@ -5,6 +5,11 @@ html{
 	font-size: 10px;
 }
 
+@mixin letra($rem) {
+	color: aqua;
+	font-size: $rem;
+}
+
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
@@ -18,13 +23,13 @@ main{
 
 h2{
 	font-weight: 600;
-	font-size: 4rem;
+	@include letra(4rem);
 }
 
 p{
 	font-family: 'Mako', sans-serif;
 	font-weight: 400;
-	font-size:2rem;
+	@include letra(2rem);
 }
 
 .lupa {

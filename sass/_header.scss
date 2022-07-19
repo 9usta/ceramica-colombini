@@ -1,5 +1,5 @@
 li {
-	font-size: 2rem;
+	@include letra(2rem);
 	transition: $time;
     &:hover {
         transform: translateY(-3px);
