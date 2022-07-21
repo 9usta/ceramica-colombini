@@ -13,7 +13,7 @@ main {
   margin: 10px 0px 30px;
   min-height: calc(100vh - 233.44px); }
 
-h2 {
+h1 {
   font-weight: 600;
   color: aqua;
   font-size: 4rem; }
@@ -34,6 +34,30 @@ p {
   .zoom:active {
     transform: scale(1.6); }
 
+.link-instagram {
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  color: whitesmoke; }
+  .link-instagram:hover {
+    color: #c92d8f; }
+
+.link-facebook {
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  color: whitesmoke; }
+  .link-facebook:hover {
+    color: #3b5998; }
+
+.link-whatsapp {
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  color: whitesmoke; }
+  .link-whatsapp:hover {
+    color: #25d366; }
+
 li {
   color: aqua;
   font-size: 2rem;
@@ -41,16 +65,16 @@ li {
   li:hover {
     transform: translateY(-3px); }
 
-.f_titulo, .titulo h1, .titulo h2 {
+.f_titulo, .titulo h2, .titulo h1 {
   font-weight: 600;
   width: 300px; }
 
-.titulo h1 {
+.titulo h2 {
   line-height: 60px;
   color: aqua;
   font-size: 8rem; }
 
-.titulo h2 {
+.titulo h1 {
   color: aqua;
   font-size: 4rem;
   text-align: right; }

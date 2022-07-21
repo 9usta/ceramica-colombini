@@ -21,7 +21,7 @@ main{
 	min-height:calc(100vh - 233.44px);
 }
 
-h2{
+h1{
 	font-weight: 600;
 	@include letra(4rem);
 }
@@ -43,3 +43,20 @@ p{
     &:active {
 	transform: scale(1.6)
 }}
+
+$redes:(
+	"instagram":#c92d8f,
+	"facebook":#3b5998,
+	"whatsapp":#25d366,
+);
+
+@each $nombre,$color in $redes {
+.link-#{$nombre}{
+	margin: 0 5px;
+	width: 30px;
+	height: 30px;
+	color: whitesmoke;
+	&:hover {
+	color: $color;}
+}
+}
