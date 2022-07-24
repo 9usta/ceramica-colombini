@@ -5,11 +5,6 @@ html{
 	font-size: 10px;
 }
 
-@mixin letra($rem) {
-	color: aqua;
-	font-size: $rem;
-}
-
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
@@ -23,13 +18,13 @@ main{
 
 h1{
 	font-weight: 600;
-	@include letra(4rem);
+	font-size:4rem;
 }
 
 p{
 	font-family: 'Mako', sans-serif;
 	font-weight: 400;
-	@include letra(2rem);
+	font-size:2rem;
 }
 
 .lupa {
@@ -44,19 +39,3 @@ p{
 	transform: scale(1.6)
 }}
 
-$redes:(
-	"instagram":#c92d8f,
-	"facebook":#3b5998,
-	"whatsapp":#25d366,
-);
-
-@each $nombre,$color in $redes {
-.link-#{$nombre}{
-	margin: 0 5px;
-	width: 30px;
-	height: 30px;
-	color: whitesmoke;
-	&:hover {
-	color: $color;}
-}
-}
