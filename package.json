@@ -4,7 +4,7 @@
   "description": "ceramica",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass --include-path sass ./sass/index.scss ./style.css -w"
+    "build": "node-sass --include-path sass ./sass/index.scss ./style.css"
   },
   "repository": {
     "type": "git",
